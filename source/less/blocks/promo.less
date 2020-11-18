@@ -1,16 +1,14 @@
 .promo__wrapper {
   border: black solid 1px;
   background-color: @base-color;
-  background-image: url("...img/index-background-desktop.jpg");
+  background-image: url("img/index-background-desktop.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .promo__description {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  @font-style-base;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
@@ -18,9 +16,7 @@
 }
 
 .promo__slogan {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  @font-style-base;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
