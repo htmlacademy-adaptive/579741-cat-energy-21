@@ -8,24 +8,25 @@
   <body class="body">
     <header class="header">
       <a class="header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Cat Energy">
+        <img src="img/logo-mobile.svg" alt="Cat Energy">
+        <img src="img/footer-logo 2.svg" alt="Cat Energy">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="nav__wrapper">
           <ul class="nav__list site-list">
             <li class="nav__item nav__item--active">
-              <a class="nav__link">
+              <a class="nav__link" href="./index.html">
                 Главная
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="photo.html">
+              <a class="nav__link" href="./catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="form.html">
+              <a class="nav__link" href="./form.html">
                 Подбор программы
               </a>
             </li>
@@ -55,22 +56,19 @@
               </li>
             </ul>
           </fieldset>
-        </div>
-      </section>
-      <section class="target">
-        <div class="target__wrapper">
+        <div class="profile__wrapper target__wrapper">
           <h3 class="visually-hidden">Цель программы</h3>
-          <fieldset class="target__info">
-            <ul class="target__list">
-              <li class="target__item">
+          <fieldset class="profile__info target__info">
+            <ul class="profile__list target__list">
+              <li class="profile__item target__item">
                 <input type="radio" value="похудение" checked>
                 <label>похудение</label>
               </li>
-              <li class="target__item">
+              <li class="profile__item target__item">
                 <input type="radio" value="Набор массы">
                 <label>Набор массы</label>
               </li>
-              <li class="target__item">
+              <li class="profile__item target__item">
                 <input type="radio" value="Не знаю (Нужен ваш совет)">
                 <label>Не знаю (Нужен ваш совет)</label>
               </li>
@@ -82,7 +80,7 @@
         <div class="owner__wrapper">
           <h3 class="visually-hidden">Контактные данные (владельца кота)</h3>
           <fieldset class="owner__info">
-          <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
+          <legend class="owner-legend">Контактные данные (владельца кота)</legend>
             <ul class="owner__list input__list">
               <li class="owner__item input__item">
                 <label class="input__label">E-mail:*</label>
@@ -94,8 +92,10 @@
               </li>
             </ul>
           </fieldset>
-            <h3 class="comment__title">Комментарий</h3>
-            <textarea  class="comment__form input__form" name="comment" cols="40" rows="3" required placeholder="Расскажите обо всех повадках кота"></textarea>
+          <fieldset class="owner__info">
+            <legend class="owner-legend">Комментарий</legend>
+            <textarea  class="owner__form input__form" name="comment" cols="40" rows="3" required placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
         </div>
       </section>
       <section class="additionally">
@@ -122,8 +122,10 @@
               </li>
             </ul>
           </fieldset>
-          <a class="button additionally__request" href="#">отправить заявку</a>
-          <small class="additionally__legend">* — Обязательные поля</small>
+          <div class="additionally__request">
+            <a class="button additionally__button" href="#">отправить заявку</a>
+            <small class="additionally__legend">* — Обязательные поля</small>
+          </div>
         </div>
       </section>
     </main>
@@ -135,26 +137,25 @@
         </div>
         <div class="footer__logo">
           <a class="footer__img">
-            <img src="https://via.placeholder.com/150x150" alt="Cat Energy">
+            <img src="img/location.png" width="320px" height="362px" alt="Cat Energy">
           </a>
         </div>
         <div class="footer__social social">
           <img class="footer__logo" src="img/footer-logo 2.svg" alt="Cat Energy">
           <ul class="social__list">
-            <li class="social__item social__item--vkontakte">
-              <a class="social__link visually-hidden" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><b class="visually-hidden">Мы в Вконтакте</b></a>
             </li>
-            <li class="social__item social__item--facebook">
-              <a class="social__link  visually-hidden" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><b class="visually-hidden">Мы в Фейсбуке</b></a>
             </li>
-            <li class="social__item social__item--instagram">
-              <a class="social__link visually-hidden" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><b class="visually-hidden">Мы в Инстаграме</b></a>
             </li>
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <b class="copyright__text visually-hidden">Разработано в HTML-Academy</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> <b class="visually-hidden">Разработано в HTML-Academy</b></a>
         </div>
       </div>
     </footer>
