@@ -8,6 +8,15 @@
 
 .nav__item {
   text-align: center;
+  margin-right: 34px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 36px;
+  }
+}
+
+.nav__item:last-child {
+  margin-right: 0;
 }
 
 .nav__link {
@@ -16,4 +25,12 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.nav__list {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }

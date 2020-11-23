@@ -1,5 +1,14 @@
 .diet-program__wrapper {
   border: black solid 1px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .diet-program__title {
@@ -9,6 +18,10 @@
   text-transform: uppercase;
   color: #000000;
   padding-left: 80px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .diet-program__item--slim::before {
@@ -19,6 +32,10 @@
   background-repeat: no-repeat;
   height: 50px;
   width: 100px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .diet-program__item--pro::before {
@@ -29,14 +46,24 @@
   background-repeat: no-repeat;
   height: 50px;
   width: 100px;
-}
 
-.diet-program__list {
-  padding: 0 20px;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .diet-program__item {
   background-color: @grey-color;
+  margin-bottom: 15px;
+}
+
+.diet-program__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .diet-program__description {
