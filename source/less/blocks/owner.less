@@ -1,5 +1,14 @@
 .owner__wrapper {
   border: black solid 1px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .owner-legend {
@@ -23,4 +32,8 @@
 .owner__info {
   .fieldset-style();
   border-color: @green-color;
+}
+
+.owner__form {
+  width: 100%;
 }
