@@ -8,6 +8,10 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .goods__item {
@@ -49,4 +53,22 @@
   padding-bottom: 20px;
   padding-left: 70px;
   padding-right: 70px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 185px;
+  }
+}
+
+.goods {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 110px;
+  }
 }
