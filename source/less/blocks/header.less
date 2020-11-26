@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+  min-height: 65px;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
@@ -9,5 +10,22 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 110px;
+  }
+}
+
+.header__link {
+  display: flex;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+  }
+}
+
+.header__name {
+  margin-left: 56px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
   }
 }

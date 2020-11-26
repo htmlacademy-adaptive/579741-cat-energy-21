@@ -1,13 +1,12 @@
 .footer__wrapper {
-  border: black solid 1px;
   background-color: @grey-color;
 }
 
 .footer__contacts {
   display: flex;
-  align-items: baseline;
+  background-color: white;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
@@ -20,12 +19,19 @@
 
 .footer__social,
 .footer__copyright {
-  border: black solid 1px;
   background-color: @grey-color;
+  padding-top: 23px;
+}
+
+.footer__social {
+  padding: 21px 70px;
 }
 
 .footer__logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 26px;
 }

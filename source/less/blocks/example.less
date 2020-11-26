@@ -8,7 +8,6 @@
 }
 
 .example__wrapper {
-  border: black solid 1px;
   background-color: @grey-color;
   padding: 0 20px;
 
@@ -36,18 +35,21 @@
 
 .example__compare {
   background-color: @grey-color;
+  padding-top: 42px;
 }
 
 .example__title {
   .font-style();
   font-size: 36px;
-  line-height: 40px;
-  text-align: center;
+  line-height: 32px;
   color: #000000;
+  padding-bottom: 7px;
 }
 
 .example__history {
-  .font-style();
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -56,7 +58,8 @@
 .example__item {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  min-width: 124px;
+  padding-top: 24px;
 }
 
 .example__number {
@@ -65,6 +68,7 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+  margin: 0;
 }
 
 .example__description {
@@ -73,7 +77,6 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
-  align-items: center;
   text-align: center;
   color: #444444;
 }
@@ -86,4 +89,5 @@
   text-transform: uppercase;
   color: #000000;
   width: 100%;
+  padding-top: 5px;
 }
