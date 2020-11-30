@@ -1,6 +1,10 @@
 .social__list {
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+  }
 }
 
 .social__item {
@@ -16,6 +20,10 @@
   background-repeat: no-repeat;
   height: 50px;
   width: 100px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icon_vkontakte_tablet.svg");
+  }
 }
 
 .social__link--facebook::before {
@@ -26,6 +34,10 @@
   background-repeat: no-repeat;
   height: 50px;
   width: 100px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icon_facebook_tablet.svg");
+  }
 }
 
 .social__link--instagram::before {
@@ -36,4 +48,8 @@
   background-repeat: no-repeat;
   height: 50px;
   width: 100px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icon_instagram_tablet.svg");
+  }
 }

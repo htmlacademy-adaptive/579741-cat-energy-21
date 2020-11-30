@@ -6,6 +6,11 @@
   color: #111111;
   padding-top: 28px;
   padding-left: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .contacts__text {
@@ -17,8 +22,28 @@
   color: #444444;
   width: 50%;
   padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
+    padding-top: 6px;
+    text-align: right;
+    padding-right: 42px;
+  }
+}
+
+.contacts__text span {
+  @media (min-width: @tablet-width) {
+    line-height: 61px;
+  }
 }
 
 .contacts__map {
   padding-top: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 }
