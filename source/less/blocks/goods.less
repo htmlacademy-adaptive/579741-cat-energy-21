@@ -1,5 +1,9 @@
 .goods__wrapper {
   border: black solid 1px;
+
+  @media (min-width: @desktop-width) {
+    width: 69%;
+  }
 }
 
 .goods__title {
@@ -59,16 +63,15 @@
   }
 }
 
-.goods {
-  padding: 0 20px;
-
-  @media (min-width: @tablet-width) {
-    padding: 0 30px;
+.goods__all {
+  @media (min-width: @desktop-width) {
+    width: 25%;
   }
+}
 
+.goods {
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 110px;
   }
 }
