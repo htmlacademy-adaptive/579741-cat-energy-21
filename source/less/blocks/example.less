@@ -1,14 +1,31 @@
 .example {
   display: flex;
   flex-direction: column;
+  background-color: @grey-color;
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
 
   @media (min-width: @desktop-width) {
+    width: 1440px;
     flex-direction: row;
   }
 }
 
 .example__wrapper {
-  background-color: @grey-color;
+  width: 280px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .example__stats {
@@ -135,4 +152,10 @@
     padding-top: 0;
     min-height: 68px;
   }
+}
+
+.example__toggles {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
 }
