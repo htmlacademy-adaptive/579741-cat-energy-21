@@ -1,3 +1,16 @@
+.footer {
+  max-width: 280px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
+}
+
 .footer__wrapper {
   background-color: @grey-color;
 
@@ -28,15 +41,7 @@
 .footer__social,
 .footer__copyright {
   background-color: @grey-color;
-  padding-top: 23px;
-}
-
-.footer__social {
-  padding: 21px 70px;
-
-  @media (min-width: @tablet-width) {
-    padding: 59px 35px;
-  }
+  min-height: 43px;
 }
 
 .footer__logo {
@@ -51,5 +56,15 @@
     margin-left: 32px;
     padding-top: 59px;
     padding-bottom: 58px;
+  }
+}
+
+.footer__map {
+  min-height: 362px;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+    margin: 0;
   }
 }
