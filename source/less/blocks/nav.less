@@ -26,12 +26,25 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .nav__list {
   display: none;
 
   @media (min-width: @tablet-width) {
+    justify-content: space-between;
     display: flex;
+    margin-top: 4px;
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    width: 482px;
   }
 }

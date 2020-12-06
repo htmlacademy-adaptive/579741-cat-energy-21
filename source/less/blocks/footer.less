@@ -1,6 +1,7 @@
 .footer {
   max-width: 320px;
   margin: auto;
+  background-image: linear-gradient(white 30%, @grey-color 70%);
 
   @media (min-width: @tablet-width) {
     max-width: 768px;
@@ -47,9 +48,15 @@
 
 .footer__social {
   background-color: @grey-color;
-  min-height: 63px;
-  padding: 0 74px;
-  padding-top: 25px;
+  padding: 0 93px;
+  padding-top: 24px;
+  padding-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 60px;
+    padding-right: 186px;
+  }
 }
 
 .footer__logo {
@@ -63,8 +70,9 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 32px;
-    padding-top: 59px;
+    padding-top: 61px;
     padding-bottom: 58px;
+    margin-right: 141px;
   }
 }
 
