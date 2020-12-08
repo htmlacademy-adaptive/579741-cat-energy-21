@@ -1,55 +1,113 @@
 .footer {
-  max-width: 280px;
+  max-width: 320px;
   margin: auto;
+  background-image: linear-gradient(white 30%, @grey-color 70%);
 
   @media (min-width: @tablet-width) {
-    max-width: 708px;
+    max-width: 768px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1220px;
+    max-width: 1440px;
+    position: relative;
   }
 }
 
 .footer__wrapper {
-  border: black solid 1px;
-  background-color: @grey-color;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .footer__contacts {
   display: flex;
-  align-items: baseline;
+  background-color: white;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 20px;
+  padding-bottom: 10px;
+  width: 280px;
+  margin: auto;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    width: 708px;
+    padding-left: 41px;
+    margin: auto;
+    padding-top: 42px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    width: 530px;
+    position: absolute;
+    top: 91px;
+    left: 113px;
   }
 }
 
-.footer__social,
 .footer__copyright {
-  border: black solid 1px;
   background-color: @grey-color;
-  min-height: 43px;
+  min-height: 77px;
+}
+
+.footer__social {
+  background-color: @grey-color;
+  padding: 0 93px;
+  padding-top: 24px;
+  padding-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 60px;
+    padding-right: 186px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 387px;
+  }
 }
 
 .footer__logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 26px;
+  background-color: @grey-color;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 32px;
+    padding-top: 61px;
+    padding-bottom: 58px;
+    margin-right: 141px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 113px;
+  }
 }
 
 .footer__map {
   min-height: 362px;
   display: flex;
+  width: 320px;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     min-height: 400px;
     margin: 0;
+    width: 768px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+    margin: 0;
+    width: 1440px;
   }
 }

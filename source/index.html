@@ -8,9 +8,9 @@
   </head>
   <body class="body">
     <header class="header">
-      <a class="header__logo" href="./index.html">
-        <img src="img/logo-mobile.svg" alt="Cat Energy">
-        <img src="img/footer-logo 2.svg" alt="Cat Energy">
+      <a class="header__link" href="./index.html">
+        <img class="header__logo" src="img/logo-mobile.svg" alt="Cat Energy">
+        <img class="header__name"src="img/logo 2.svg" alt="Cat Energy">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -82,22 +82,22 @@
       <section class="example">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
-          <p class="example__history">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <p class="example__history">Борис сбросил 5 кг за 2 месяца, просто <br>заменив свой обычный корм на Cat <br>Energy Slim. Отличный результат без <br>изнуряющих тренировок! При этом он не <br>менял своих привычек и по-прежнему <br>спит по 16 часов в день.</p>
           <ul class="example__stats">
             <li class="example__item">
               <h3 class="example__number">5 КГ</h3>
-              <p class="example__description">снижение веса</p>
+              <p class="example__description">снижение<br>веса</p>
             </li>
             <li class="example__item">
               <h3 class="example__number">60 ДНЕЙ</h3>
-              <p class="example__description">затрачено времени</p>
+              <p class="example__description">затрачено<br>времени</p>
             </li>
             <li class="example__item--cost">Затраты на питание: 15 000 РУБ.</li>
           </ul>
         </div>
         <div class="example__compare">
           <img src="img/before-mobile 1.png" alt="Фото кота до похудения">
-          <img src="img/after-mobile 1.png" alt="Фото кота после похудения">
+          <img class="visually-hidden" src="img/after-mobile 1.png" alt="Фото кота после похудения">
           <p class="example__toggles slider__toggles">
           <button class="slider__toggle" type="button">Было</button>
           <button class="slider__toggle" type="button">Стало</button>
@@ -109,28 +109,34 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__contacts contacts">
-          <b class="contacts__title">приглашаем<br>к сотрудничеству<br>дилеров!</b>
-          <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__title">приглашаем<br>к сотрудничеству<br>дилеров!</p>
+          <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8 <span>Санкт-Петербург</span></span></p>
         </div>
         <div class="footer__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1606854313738!5m2!1sen!2sru" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
+        <div class="footer__logo">
+          <a class="footer__link" href="./index.html">
+            <img class="footer__img" src="img/footer-logo 2.svg" alt="Cat Energy">
+          </a>
+        </div>
         <div class="footer__social social">
-          <img class="footer__logo" src="img/footer-logo 2.svg" alt="Cat Energy">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><b class="visually-hidden">Мы в Вконтакте</b></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><b class="visually-hidden">Мы в Фейсбуке</b></a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><b class="visually-hidden">Мы в Инстаграме</b></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><b class="visually-hidden">Мы в Инстаграме</b></a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><b class="visually-hidden">Мы в Фейсбуке</b></a>
             </li>
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> <b class="visually-hidden">Разработано в HTML-Academy</b></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="visually-hidden">Разработано в HTML-Academy</b>
+          </a>
         </div>
       </div>
     </footer>

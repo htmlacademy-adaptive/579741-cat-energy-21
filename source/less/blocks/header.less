@@ -3,12 +3,31 @@
   justify-content: space-between;
   max-width: 280px;
   margin: auto;
+  min-height: 66px;
 
   @media (min-width: @tablet-width) {
     max-width: 708px;
+    padding-top: 19px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1220px;
+  }
+}
+
+.header__link {
+  display: flex;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+  }
+}
+
+.header__name {
+  margin-left: 56px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 39px;
   }
 }

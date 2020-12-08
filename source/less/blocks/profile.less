@@ -1,15 +1,15 @@
 .profile__wrapper {
-  border: black solid 1px;
-  padding: 0 20px;
+  width: 280px;
+  margin: auto;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    width: 1220px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,11 +17,11 @@
 }
 
 .profile__item {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .profile__description {
-  padding-left: 15px;
+  margin-top: 37px;
 
   @media (min-width: @desktop-width) {
     width: 100%;
@@ -30,4 +30,36 @@
 
 .profile__info {
   border: none;
+  margin-top: 26px;
+  padding: 0;
+  margin-left: -1px;
+}
+
+.input__label,
+.input__form {
+  .font-style();
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.input__label {
+  margin-right: 10px;
+}
+
+.input__form {
+  height: 38px;
+}
+
+.input__form--name {
+  width: 219px;
+}
+
+.input__form--weight {
+  width: 197px;
+}
+
+.input__form--age {
+  width: 163px;
 }
