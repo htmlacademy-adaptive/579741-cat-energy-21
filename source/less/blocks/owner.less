@@ -1,13 +1,14 @@
 .owner__wrapper {
-  border: black solid 1px;
-  padding: 0 20px;
+  width: 280px;
+  margin: auto;
+  padding-top: 23px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    width: 1220px;
   }
 }
 
@@ -16,10 +17,13 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  padding-right: 23px;
 }
 
 .owner__item {
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .owner__comment {
@@ -31,7 +35,9 @@
 
 .owner__info {
   .fieldset-style();
-  border-color: @green-color;
+  padding-top: 32px;
+  border-top: solid @green-color 2px;
+  margin-left: -2px;
 }
 
 .owner__form {
@@ -43,4 +49,14 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.input__label-mail,
+.input__label-tel {
+  flex: 1;
+}
+
+.input__form-mail,
+.input__form-tel {
+  flex: 4;
 }

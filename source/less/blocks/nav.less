@@ -35,16 +35,23 @@
 
 .nav__list {
   display: none;
+  margin-top: 4px;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
     display: flex;
-    margin-top: 4px;
+    margin-top: 22px;
     width: 440px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 30px;
+    margin-top: 48px;
     width: 482px;
+  }
+}
+
+.nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
