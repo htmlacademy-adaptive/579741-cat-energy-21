@@ -9,9 +9,9 @@
 </head>
   <body class="body">
     <header class="header">
-      <a class="header__logo">
-        <img src="img/logo-mobile.svg" alt="Cat Energy">
-        <img src="img/footer-logo 2.svg" alt="Cat Energy">
+      <a class="header__link" href="./index.html">
+        <img class="header__logo" src="img/logo-mobile.svg" alt="Cat Energy">
+        <img class="header__name"src="img/logo 2.svg" alt="Cat Energy">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,20 +41,20 @@
       <section class="profile">
         <div class="profile__wrapper">
           <h3 class="visually-hidden">Анкета для подбора программы</h3>
-          <p class="profile__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="profile__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
           <fieldset class="profile__info">
             <ul class="profile__list input__list">
               <li class="profile__item input__item">
                 <label class="input__label">ИМЯ:*</label>
-                <input class="input__form" type="text" required placeholder="БАРСИК">
+                <input class="input__form input__form--name" type="text" required placeholder="БАРСИК">
               </li>
               <li class="profile__item input__item">
                 <label class="input__label">Вес (кг):*</label>
-                <input class="input__form" type="text" required placeholder="7">
+                <input class="input__form input__form--weight" type="text" required placeholder="7">
               </li>
               <li class="profile__item input__item">
                 <label class="input__label">Возраст (лет):</label>
-                <input class="input__form" type="text" required placeholder="7">
+                <input class="input__form input__form--age" type="text" required placeholder="7">
               </li>
             </ul>
           </fieldset>
