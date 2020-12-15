@@ -6,6 +6,12 @@
   color: #222222;
   margin-top: 11px;
   margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 26px;
+  }
 }
 
 .target__info {
@@ -14,4 +20,16 @@
 
 .target__item label {
   margin-left: 21px;
+}
+
+.target__list {
+  @media (min-width: @tablet-width) {
+    margin-left: 43px;
+    padding-top: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 252px;
+    padding-top: 14px;
+  }
 }
