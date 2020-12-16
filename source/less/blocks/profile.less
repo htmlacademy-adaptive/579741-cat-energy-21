@@ -131,3 +131,33 @@
     width: 1192px;
   }
 }
+
+.profile__radio {
+  display: none;
+}
+
+.profile__radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.profile__radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.profile__radio:checked + label::after {
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border: 8px solid #68b738;
+  border-radius: 50%;
+  content: "";
+}
