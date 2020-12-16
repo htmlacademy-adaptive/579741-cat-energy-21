@@ -6,6 +6,17 @@
   width: 280px;
   margin: auto;
   margin-top: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 100px;
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin-top: 66px;
+  }
 }
 
 .profile__description {

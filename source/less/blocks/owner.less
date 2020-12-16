@@ -1,13 +1,16 @@
 .owner__wrapper {
-  border: black solid 1px;
-  padding: 0 20px;
+  width: 280px;
+  margin: auto;
+  padding-top: 23px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    width: 632px;
+    padding-top: 77px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    width: 1220px;
+    padding-top: 46px;
   }
 }
 
@@ -16,10 +19,26 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .owner__item {
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+    margin-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 6px;
+  }
 }
 
 .owner__comment {
@@ -31,16 +50,54 @@
 
 .owner__info {
   .fieldset-style();
-  border-color: @green-color;
+  padding-top: 32px;
+  border-top: solid @green-color 2px;
+  margin-left: -2px;
 }
 
-.owner__form {
-  width: 100%;
+.owner__info-contacts {
+  padding-bottom: 11px;
 }
 
 .owner__list {
+  @media (min-width: @tablet-width) {
+    margin-top: 40px;
+    padding-bottom: 43px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.input__label-mail,
+.input__label-tel {
+  flex: 2;
+  margin-right: 26px;
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    margin-right: 0;
+    flex: none;
+  }
+}
+
+.input__form-mail,
+.input__form-tel {
+  flex: 4;
+  padding-left: 16px;
+  padding-top: 5px;
+
+  @media (min-width: @desktop-width) {
+    width: 450px;
+  }
+}
+
+.owner__info-comment {
+  margin-top: -8px;
+}
+
+.owner-legend-comment {
+  padding-bottom: 6px;
 }
