@@ -14,6 +14,8 @@
 }
 
 .footer__wrapper {
+  background-color: @grey-color;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +28,7 @@
 
 .footer__contacts {
   display: flex;
-  background-color: white;
+  background-color: @grey-color;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 10px;
@@ -53,6 +55,9 @@
 .footer__copyright {
   background-color: @grey-color;
   min-height: 77px;
+  border-top: 1px solid #cdcdcd;
+  width: 280px;
+  margin: auto;
 }
 
 .footer__social {
@@ -80,6 +85,9 @@
   text-align: center;
   padding-bottom: 26px;
   background-color: @grey-color;
+  border-bottom: 1px solid #cdcdcd;
+  width: 280px;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     margin-left: 32px;
