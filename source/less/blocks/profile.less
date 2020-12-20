@@ -22,6 +22,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 26px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 13px;
+  }
 }
 
 .profile__description {
@@ -31,7 +35,8 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 29px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -48,7 +53,15 @@
   padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 47px;
+    margin-top: 28px;
+    padding: 0;
+    width: 708px;
+    border-bottom: none;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 643px;
   }
 }
 
@@ -72,6 +85,10 @@
   @media (min-width: @tablet-width) {
     margin-right: 15px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 12px;
+  }
 }
 
 .additionally__label {
@@ -86,6 +103,10 @@
   @media (min-width: @tablet-width) {
     min-height: 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 51px;
+  }
 }
 
 .input__form--name {
@@ -94,6 +115,10 @@
 
   @media (min-width: @tablet-width) {
     width: 542px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
   }
 }
 
@@ -104,6 +129,10 @@
   @media (min-width: @tablet-width) {
     width: 509px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 452px;
+  }
 }
 
 .input__form--age {
@@ -112,6 +141,10 @@
 
   @media (min-width: @tablet-width) {
     width: 469px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 407px;
   }
 }
 
@@ -123,15 +156,17 @@
   padding-left: 16px;
 
   @media (min-width: @tablet-width) {
-    width: 616px;
+    width: 611px;
     min-height: 160px;
-    margin-top: 35px;
+    margin-top: 42px;
     padding-top: 12px;
     padding-left: 22px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1192px;
+    padding-top: 15px;
+    padding-left: 18px;
   }
 }
 
@@ -154,6 +189,12 @@
   border: 1px solid #adb5bd;
   border-radius: 50%;
   margin-right: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 38px;
+    height: 38px;
+    margin-right: 20px;
+  }
 }
 
 .profile__radio:checked + label::after {
@@ -164,4 +205,9 @@
   border: 8px solid #68b738;
   border-radius: 50%;
   content: "";
+
+  @media (min-width: @tablet-width) {
+    top: 11px;
+    left: 12px;
+  }
 }

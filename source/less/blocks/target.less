@@ -10,26 +10,34 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 26px;
+    margin-bottom: 6px;
   }
 }
 
 .target__info {
   border: none;
-  border: none;
   padding-top: 18px;
   width: 280px;
   border-bottom: solid @grey-color 1px;
+
+  @media (min-width: @tablet-width) {
+    border: solid @grey-color 1px;
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .target__list {
   @media (min-width: @tablet-width) {
-    margin-left: 43px;
-    padding-top: 21px;
+    margin-left: 28px;
+    padding-top: 3px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 252px;
-    padding-top: 14px;
+    margin-right: 248px;
   }
 }

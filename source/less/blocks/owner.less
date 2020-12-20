@@ -5,12 +5,12 @@
 
   @media (min-width: @tablet-width) {
     width: 632px;
-    padding-top: 77px;
+    padding-top: 52px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding-top: 46px;
+    padding-top: 32px;
   }
 }
 
@@ -32,12 +32,12 @@
   margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 22px;
-    margin-top: 45px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 6px;
+    margin-right: 76px;
   }
 }
 
@@ -53,6 +53,14 @@
   padding-top: 32px;
   border-top: solid @green-color 2px;
   margin-left: -2px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 21px;
+  }
 }
 
 .owner__info-contacts {
@@ -61,13 +69,15 @@
 
 .owner__list {
   @media (min-width: @tablet-width) {
-    margin-top: 40px;
-    padding-bottom: 43px;
+    margin-top: 46px;
+    margin-left: 5px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-left: 0;
   }
 }
 
@@ -77,6 +87,10 @@
     width: 90px;
     margin-right: 0;
     flex: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 88px;
   }
 }
 
@@ -93,14 +107,42 @@
 
 .input__form-mail {
   width: 201px;
+
+  @media (min-width: @tablet-width) {
+    width: 523px;
+    padding-left: 18px;
+    padding-top: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 465px;
+    padding-left: 13px;
+    padding-top: 1px;
+  }
+}
+
+.input__form-tel {
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
+    padding-top: 5px;
+    width: 511px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 454px;
+    padding-top: 5px;
+  }
 }
 
 .owner__info-comment {
   margin-top: 4px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .owner-legend-comment {
-  padding-bottom: 6px;
   padding-bottom: 6px;
   padding-right: 22px;
 }
