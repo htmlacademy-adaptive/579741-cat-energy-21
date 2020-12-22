@@ -1,5 +1,12 @@
 .goods {
   padding-top: 5px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
 }
 
 .goods__wrapper {
@@ -8,7 +15,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 69%;
+    padding-top: 41px;
+    width: 896px;
   }
 }
 
@@ -27,6 +35,12 @@
     margin-left: 38px;
     margin-top: 67px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin-top: 78px;
+    margin-left: 0;
+  }
 }
 
 .goods__list {
@@ -39,6 +53,13 @@
     border: solid 1px @grey-color;
     width: 632px;
     padding: 0 37px;
+    margin-top: 0;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 895px;
   }
 }
 
@@ -48,6 +69,15 @@
   justify-content: space-between;
   border-top: solid 1px @grey-color;
   align-items: baseline;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+    padding-bottom: 7px;
+  }
 }
 
 .goods__item:last-child {
@@ -98,6 +128,11 @@
     margin-top: 23px;
     font-size: 16px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    margin-bottom: 0;
+  }
 }
 
 .goods-all__button {
@@ -114,18 +149,44 @@
   margin-top: 24px;
   margin-bottom: 34px;
 
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding-top: 72px;
+    padding-bottom: 69px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-bottom: 185px;
+    padding-bottom: 0;
+    width: 245px;
   }
 }
 
 .goods-all__button p {
   width: 196px;
   margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    margin-right: 24px;
+    margin-top: 115px;
+    padding-bottom: 42px;
+    width: 196px;
+  }
 }
 
-.goods__all {
+.goods-all {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 74px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 25%;
+    width: 245px;
+    margin-top: 24px;
+    margin-bottom: 0;
   }
 }
