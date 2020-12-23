@@ -4,32 +4,40 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
-  margin-top: 11px;
-  margin-bottom: 26px;
+  margin-top: 4px;
+  margin-bottom: 8px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 26px;
+    margin-bottom: 6px;
   }
 }
 
 .target__info {
   border: none;
-}
+  padding-top: 18px;
+  width: 280px;
+  border-bottom: solid @grey-color 1px;
 
-.target__item label {
-  margin-left: 21px;
+  @media (min-width: @tablet-width) {
+    border: solid @grey-color 1px;
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .target__list {
   @media (min-width: @tablet-width) {
-    margin-left: 43px;
-    padding-top: 21px;
+    margin-left: 28px;
+    padding-top: 3px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 252px;
-    padding-top: 14px;
+    margin-right: 248px;
   }
 }
