@@ -9,7 +9,11 @@
   <body class="body">
     <header class="header">
       <a class="header__link" href="./index.html">
-        <img class="header__logo" src="img/logo-mobile.svg" alt="Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo" src="img/logo-mobile.svg" alt="Cat Energy">
+        </picture>
         <img class="header__name"src="img/logo 2.svg" alt="Cat Energy">
       </a>
       <nav class="nav">
