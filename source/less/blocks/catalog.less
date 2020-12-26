@@ -12,8 +12,6 @@
 }
 
 .catalog__wrapper {
-  padding-top: 25px;
-
   @media (min-width: @desktop-width) {
     padding-top: 25px;
   }
@@ -25,7 +23,7 @@
   line-height: 36px;
   color: #000000;
   margin-top: 28px;
-  margin-bottom: 39px;
+  margin-bottom: 15px;
   margin-left: 19px;
 
   @media (min-width: @tablet-width) {
@@ -37,7 +35,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 90px;
+    margin-top: 72px;
   }
 }
 
@@ -47,13 +45,15 @@
   padding: 7px 20px;
   justify-content: end;
   flex-wrap: wrap;
+  padding-top: 5px;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
     width: 324px;
     background-color: @grey-color;
-    margin-top: 140px;
+    margin-top: 164px;
   }
 
   @media (min-width: @desktop-width) {
@@ -77,6 +77,10 @@
     width: 158px;
     margin: auto;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 33px;
   }
 }
 
@@ -116,10 +120,9 @@
 .catalog__button {
   padding: 10px 0;
   width: 280px;
-  margin-top: 19px;
+  // margin-top: 19px;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     margin: auto;
@@ -134,11 +137,23 @@
 }
 
 .catalog__picture {
+  display: block;
+  margin: auto;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 42px;
+    margin-top: -54px;
+  }
+}
+
+.catalog__picture-frame {
   width: 140px;
-  height: 116px;
+  min-height: 111px;
+  margin-top: 27px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
+    width: 324px;
+    margin-top: 0;
   }
 }
 
