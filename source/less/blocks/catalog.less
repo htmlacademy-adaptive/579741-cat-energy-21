@@ -31,11 +31,12 @@
     line-height: 60px;
     margin-top: 56px;
     margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 67px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 72px;
+    margin-bottom: 0;
   }
 }
 
@@ -45,19 +46,23 @@
   padding: 7px 20px;
   justify-content: end;
   flex-wrap: wrap;
-  padding-top: 5px;
+  padding-top: 6px;
   margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
     width: 324px;
-    background-color: @grey-color;
-    margin-top: 164px;
+    background: linear-gradient(0deg, #f2f2f2 82%, transparent 82%);
+    border: none;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    margin-top: 59px;
+    background: linear-gradient(0deg, #f2f2f2 85%, transparent 85%);
+    margin-bottom: 10px;
   }
 }
 
@@ -73,7 +78,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    padding-top: 160px;
+    padding-top: 27px;
     width: 158px;
     margin: auto;
     text-align: center;
@@ -140,9 +145,14 @@
   display: block;
   margin: auto;
 
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 78px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-left: 42px;
-    margin-top: -54px;
+    left: 40px;
   }
 }
 
@@ -152,8 +162,15 @@
   margin-top: 27px;
 
   @media (min-width: @tablet-width) {
+    min-height: 202px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 324px;
     margin-top: 0;
+    min-height: 203px;
+    position: relative;
   }
 }
 
@@ -166,11 +183,13 @@
 .catalog__list {
   display: flex;
   flex-direction: column;
+  margin-top: 41px;
 
   @media (min-width: @tablet-width) {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
+    margin-top: 0;
   }
 }
 
@@ -185,21 +204,25 @@
 .catalog__item--all h2 {
   margin: auto;
   width: 280px;
-  margin-top: 69px;
+  margin-top: 71px;
   margin-left: 40px;
 
   @media (min-width: @tablet-width) {
     margin: auto;
     width: 179px;
-    margin-top: 4px;
+    margin-top: 224px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 205px;
   }
 }
 
 .catalog__item--all p {
   width: 280px;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-left: 29px;
-  margin-bottom: 4px;
+  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     width: 226px;
