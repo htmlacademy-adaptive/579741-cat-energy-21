@@ -13,7 +13,7 @@
   @media (min-width: @desktop-width) {
     width: 1440px;
     flex-direction: row;
-    background: linear-gradient(white 23%, @grey-color 23%);
+    background: linear-gradient(white 26%, @grey-color 26%);
   }
 }
 
@@ -58,13 +58,14 @@
 
   @media (min-width: @tablet-width) {
     min-height: 624px;
-    background: linear-gradient(white 34%, #d9d9d9 34%);
+    background: linear-gradient(white 35%, #d9d9d9 35%);
     padding-top: 90px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 0;
-    background: linear-gradient(white 27%, @grey-color 27%);
+    background: linear-gradient(white 26%, #f2f2f2 26%);
   }
 }
 
@@ -145,6 +146,10 @@
     line-height: 40px;
     width: 160px;
   }
+
+  @media (min-width: @tablet-width) {
+    line-height: 43px;
+  }
 }
 
 .example__description {
@@ -170,8 +175,16 @@
     background-color: #ffffff;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     background-color: @grey-color;
+  }
+}
+
+.example__description--wasted {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 56px;
+    left: 0;
   }
 }
 
@@ -208,6 +221,12 @@
   }
 }
 
+.example__item--cost span {
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+  }
+}
+
 .example__toggles {
   width: 211px;
   margin: auto;
@@ -218,14 +237,44 @@
 
   @media (min-width: @tablet-width) {
     width: 580px;
-    margin-top: 287px;
+    margin-top: 522px;
     align-items: center;
     padding-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 196px;
+    margin-top: 435px;
     margin-left: 89px;
     padding-bottom: 71px;
+  }
+}
+
+.example__picture--before {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 62px;
+    left: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -30px;
+    left: 16px;
+  }
+}
+
+.example__picture--after {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    right: 29px;
+    top: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -37px;
+    top: -29px;
   }
 }
