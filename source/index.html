@@ -54,11 +54,21 @@
         <div class="diet-program__wrapper">
           <ul class="diet-program__list">
             <li class="diet-program__item diet-program__item--slim">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat_back_desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/cat_back_tablet.svg">
+                <img class="diet-program__logo diet-program__logo--slim" src="img/cat_back.svg" alt="Логотип набора массы">
+              </picture>
                 <h3 class="diet-program__title">Похудение</h3>
                 <p class="diet-program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="diet-program__link" href="#">каталог slim</a>
             </li>
             <li class="diet-program__item diet-program__item--pro">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat_after_desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/cat__after-tablet.svg">
+                <img class="diet-program__logo diet-program__logo--pro" src="img/cat__after.svg" alt="Логотип похудения">
+              </picture>
               <h3 class="diet-program__title">Набор массы</h3>
               <p class="diet-program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="diet-program__link" href="#">каталог pro</a>
@@ -96,14 +106,22 @@
             </li>
             <li class="example__item">
               <h3 class="example__number">60 ДНЕЙ</h3>
-              <p class="example__description">затрачено <br>времени</p>
+              <p class="example__description example__description--wasted">затрачено <br>времени</p>
             </li>
             <li class="example__item--cost">Затраты на питание: <span>15 000 РУБ.</span></li>
           </ul>
         </div>
         <div class="example__compare">
-          <img src="img/before-mobile 1.png" alt="Фото кота до похудения">
-          <img class="visually-hidden" src="img/after-mobile 1.png" alt="Фото кота после похудения">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+            <img class="example__picture example__picture--before" src="img/before-mobile 1.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота до похудения">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+            <img class="example__picture example__picture--after" src="img/after-mobile 1.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота после похудения">
+          </picture>
           <p class="example__toggles slider__toggles">
           <button class="slider__toggle" type="button">Было</button>
           <input type="radio" name="point" id="slide1" checked>
@@ -142,6 +160,10 @@
         </div>
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo_html_tablet.svg">
+              <img class="copyright__logo" src="img/logo_html_mobile.svg" alt="Логотип HTML-Academy">
+            </picture>
             <b class="visually-hidden">Разработано в HTML-Academy</b>
           </a>
         </div>

@@ -33,88 +33,35 @@
   }
 }
 
-.diet-program__item--slim::before {
-  content: "";
-  background-image: url("../img/cat_back.svg");
-  display: block;
+.diet-program__logo--slim {
   position: absolute;
-  background-repeat: no-repeat;
-  height: 54px;
-  width: 100px;
   top: 20px;
-  left: 21px;
+  left: 19px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    top: 84px;
+    left: 447px;
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
-    background-image: url("../img/cat_back_desktop.svg");
-    height: 126px;
     top: 43px;
-    left: 56px;
+    left: 57px;
   }
 }
 
-.diet-program__item--slim::after {
-  @media (min-width: @tablet-width) {
-    content: "";
-    background-image: url("../img/cat__back-tablet.svg");
-    display: block;
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 211px;
-    width: 200px;
-    top: 82px;
-    right: 62px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.diet-program__item--pro::before {
-  content: "";
-  background-image: url("../img/cat__after.svg");
-  display: block;
+.diet-program__logo--pro {
   position: absolute;
-  background-repeat: no-repeat;
-  height: 54px;
-  width: 100px;
-  top: 22px;
+  top: 20px;
   left: 13px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    top: 93px;
+    left: 413px;
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
-    background-image: url("../img/cat_after_desktop.svg");
-    height: 126px;
-    top: 48px;
-    left: 37px;
-    width: 134px;
-  }
-}
-
-.diet-program__item--pro::after {
-  @media (min-width: @tablet-width) {
-    content: "";
-    background-image: url("../img/cat__after-tablet.svg");
-    display: block;
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 211px;
-    width: 276px;
-    top: 92px;
-    right: 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
+    top: 50px;
+    left: 35px;
   }
 }
 
@@ -129,11 +76,13 @@
     width: 708px;
     margin: auto;
     margin-bottom: 28px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
     margin: 0;
+    position: relative;
   }
 }
 
