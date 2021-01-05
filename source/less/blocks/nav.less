@@ -1,10 +1,20 @@
 .nav {
-  width: auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
 }
 
 .nav__item {
   text-align: center;
-  margin-right: 34px;
+  padding: 21px 0;
+  border-top: solid 1px @grey-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border-top: none;
+  }
 
   @media (min-width: @desktop-width) {
     margin-right: 36px;
@@ -17,14 +27,16 @@
 
 .nav__link {
   .font-style();
-  font-size: 20px;
+  font-size: 21px;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  font-weight: bold;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,7 +54,6 @@
 
 .nav__list {
   display: none;
-  margin-top: 4px;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
@@ -58,6 +69,17 @@
 }
 
 .nav__toggle {
+  background-image: url("../img/burger-icon.svg");
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 34px;
+  top: 23px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+
   @media (min-width: @tablet-width) {
     display: none;
   }

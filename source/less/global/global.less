@@ -36,3 +36,45 @@
     border-bottom: 1px dotted #cdcdcd;
   }
 }
+
+input[type="range"] {
+  appearance: none;
+  width: 83px;
+  background-color: @grey-color;
+
+  @media (min-width: @tablet-width) {
+    width: 426px;
+  }
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  border-radius: 6px;
+  height: 15px;
+  border: 2px solid #cdcdcd;
+  background-color: #ffffff;
+  padding: 0 4px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #dcdcdc;
+    height: 6px;
+    border: none;
+  }
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background-color: @green-color;
+  width: 34px;
+  height: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2px;
+
+  @media (min-width: @tablet-width) {
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    margin-top: 0;
+    box-shadow: 0 0 0 13px white, 0 0 0 14px #dcdcdc;
+  }
+}
