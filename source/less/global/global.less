@@ -47,7 +47,9 @@ input[type="range"] {
   }
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-moz-range-track,
+input[type="range"]::-ms-track {
   border-radius: 6px;
   height: 15px;
   border: 2px solid #cdcdcd;
@@ -61,7 +63,9 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb,
+input[type="range"]::-ms-thumb {
   appearance: none;
   background-color: @green-color;
   width: 34px;
