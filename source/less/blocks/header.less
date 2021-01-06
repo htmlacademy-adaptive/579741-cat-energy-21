@@ -1,16 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 280px;
-  padding: 0 20px;
+  width: 320px;
   border-bottom: solid 1px @grey-color;
   margin: auto;
   min-height: 66px;
+  flex-wrap: wrap;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 708px;
     padding-top: 19px;
     border-bottom: none;
+    flex-wrap: nowrap;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,7 +22,7 @@
 
 .header__link {
   display: flex;
-  width: 100%;
+  width: 250px;
 
   @media (min-width: @tablet-width) {
     width: 174px;
@@ -41,9 +43,13 @@
 
 .header__logo {
   margin-top: 12px;
+  margin-left: 20px;
+  margin-bottom: 11px;
 
   @media (min-width: @tablet-width) {
     margin-top: 2px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {

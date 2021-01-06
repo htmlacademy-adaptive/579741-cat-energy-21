@@ -58,7 +58,7 @@
 
   @media (min-width: @tablet-width) {
     min-height: 624px;
-    background: linear-gradient(white 35%, #d9d9d9 35%);
+    background: linear-gradient(white 35%, #f2f2f2 35%);
     padding-top: 90px;
     position: relative;
   }
@@ -170,8 +170,6 @@
     font-size: 14px;
     line-height: 14px;
     position: absolute;
-    top: 55px;
-    left: 15px;
     background-color: #ffffff;
   }
 
@@ -184,7 +182,17 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 56px;
-    left: 0;
+    left: 8px;
+    padding: 0 10px;
+  }
+}
+
+.example__description--low {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 56px;
+    left: 23px;
+    padding: 0 10px;
   }
 }
 
@@ -228,7 +236,7 @@
 }
 
 .example__toggles {
-  width: 211px;
+  width: 210px;
   margin: auto;
   margin-top: 28px;
   display: flex;
