@@ -14,20 +14,6 @@ const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify-es");
 const del = require("del");
 
-// Styles
-
-// const styles = () => {
-//   return gulp
-//     .src("source/less/style.less")
-//     .pipe(plumber()) //даже если есть ошибка в  коде, сервер запустится, не упадёт
-//     .pipe(sourcemap.init()) //записываем состояние лесс файла,мап- по каким правилам формируется файл цсс
-//     .pipe(less())  // лесс превращается в цсс
-//     .pipe(postcss([autoprefixer(),csso()])) //получает цсс файл, обрабатывает его с помощью плагинов и на выходе получаем тоже файл цсс
-//     .pipe(sourcemap.write("."))
-//     .pipe(rename("style.min.css")) // минифицируем файл
-//     .pipe(gulp.dest("source/css"))
-//     .pipe(sync.stream());
-// };
 
 const stylesDev = () => {
   return gulp
@@ -64,7 +50,6 @@ const clean = () => {
   return del("build");
 };
 
-// если не экспорртировать функцию, то она не работаает!
 exports.clean = clean;
 
 
@@ -86,7 +71,7 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/less/**/*.less", gulp.series("stylesDev"));
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
@@ -106,13 +91,6 @@ exports.default = gulp.series(stylesDev, server, watcher);
 //   )
 // )
 
-//Пример
-
-const pages = () => {
-  return gulp.src("source/*.html").pipe(gulp.dest("source/html"));
-};
-
-exports.pages = pages;
 
 // Images
 
