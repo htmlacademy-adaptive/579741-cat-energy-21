@@ -16,33 +16,63 @@ const del = require("del");
 
 // Styles
 
-const styles = () => {
+// const styles = () => {
+//   return gulp
+//     .src("source/less/style.less")
+//     .pipe(plumber()) //даже если есть ошибка в  коде, сервер запустится, не упадёт
+//     .pipe(sourcemap.init()) //записываем состояние лесс файла,мап- по каким правилам формируется файл цсс
+//     .pipe(less())  // лесс превращается в цсс
+//     .pipe(postcss([autoprefixer(),csso()])) //получает цсс файл, обрабатывает его с помощью плагинов и на выходе получаем тоже файл цсс
+//     .pipe(sourcemap.write("."))
+//     .pipe(rename("style.min.css")) // минифицируем файл
+//     .pipe(gulp.dest("source/css"))
+//     .pipe(sync.stream());
+// };
+
+const stylesDev = () => {
   return gulp
     .src("source/less/style.less")
-    .pipe(plumber()) //даже если есть ошибка в  коде, сервер запустится, не упадёт
-    .pipe(sourcemap.init()) //записываем состояние лесс файла,мап- по каким правилам формируется файл цсс
-    .pipe(less())  // лесс превращается в цсс
-    .pipe(postcss([autoprefixer(),csso()])) //получает цсс файл, обрабатывает его с помощью плагинов и на выходе получаем тоже файл цсс
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(rename("style.min.css")) // минифицируем файл
     .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 };
 
-exports.styles = styles;
+const stylesBuild = () => {
+  return gulp
+    .src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([autoprefixer(), csso()]))
+    .pipe(rename("styles.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+};
+
+exports.stylesBuild = stylesBuild;
+exports.stylesDev = stylesDev;
 
 // Clean
 
-const clean= () => {
-  return del ("build")
-}
+const clean = () => {
+  return del("build");
+};
+
+// если не экспорртировать функцию, то она не работаает!
+exports.clean = clean;
+
 
 // Server
-
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "build",
+      baseDir: "source",
     },
     cors: true,
     notify: false,
@@ -60,38 +90,21 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
-exports.default = gulp.series(styles, server, watcher);
+exports.default = gulp.series(stylesDev, server, watcher);
 
-// Build
-
-const build = gulp.series(
-  clean,
-  gulp.parallel(
-  styles,
-  html,
-  sprite,
-  copy,
-  images,
-  createWebp
- )
-)
-
-exports.build = build;
-
-exports.default = gulp.series(
-  clean,
-  gulp.parallel(
-  styles,
-  html,
-  sprite,
-  copy,
-  createWebp
- ),
-gulp.series(
-  server, watcher
-  )
-)
-
+// exports.default = gulp.series(
+//   clean,
+//   gulp.parallel(
+//   styles,
+//   html,
+//   sprite,
+//   copy,
+//   createWebp
+//  ),
+// gulp.series(
+//   server, watcher
+//   )
+// )
 
 //Пример
 
@@ -104,49 +117,53 @@ exports.pages = pages;
 // Images
 
 const images = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(imagemin([
-    imagemin.mozjpeg({progressive:true}),
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("build/img"))
-  }
-
-  exports.images = images;
-
-  // Webp
-
-  const createWebp = () => {
-    return gulp.src("source/img/**/*.{jpg,png,}")
-    .pipe(webp({quality:90}))
+  return gulp
+    .src("source/img/**/*.{jpg,png,svg}")
+    .pipe(
+      imagemin([
+        imagemin.mozjpeg({ progressive: true }),
+        imagemin.optipng({ optimizationLevel: 3 }),
+        imagemin.svgo(),
+      ])
+    )
     .pipe(gulp.dest("build/img"));
-  }
+};
 
-  exports.createWebp = createWebp;
+exports.images = images;
 
-  // Sprite
+// Webp
 
-  const sprite = () => {
-    return gulp.src("source/img/icons/*.svg")
+const createWebp = () => {
+  return gulp
+    .src("source/img/**/*.{jpg,png,}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"));
+};
+
+exports.createWebp = createWebp;
+
+// Sprite
+
+const sprite = () => {
+  return gulp
+    .src("source/img/icons/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
-  }
+};
 
-  exports.sprite = sprite;
+exports.sprite = sprite;
 
-  // HTML
+// HTML
 
-  const html= () => {
-    return gulp.src("source/*.html")
-    .pipe(htmlmin({collapseWhitespace:true}))
+const html = () => {
+  return gulp
+    .src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
+};
 
-  }
-
-  exports.html = html;
-
+exports.html = html;
 
 // // Scripts
 
@@ -163,16 +180,28 @@ const images = () => {
 
 // Copy
 
-const copy= () => {
-  return gulp.src([
-    "source/fonts/*{woff2,woff}",
-    "source/*.ico",
-    "source/img/**/*.{jpg,png,svg}"
-  ],
-  {
-    base:"source"
-  })
-  .pipe(gulp.dest("build"));
-}
+const copy = () => {
+  return gulp
+    .src(
+      [
+        "source/fonts/*{woff2,woff}",
+        "source/*.ico",
+        "source/img/**/*.{jpg,png,svg}",
+      ],
+      {
+        base: "source",
+      }
+    )
+    .pipe(gulp.dest("build"));
+};
 
 exports.copy = copy;
+
+// Build
+
+const build = gulp.series(
+  clean,
+  gulp.parallel(stylesBuild, html, sprite, copy, images, createWebp)
+);
+
+exports.build = build;
