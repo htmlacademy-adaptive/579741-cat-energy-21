@@ -50,16 +50,19 @@
   padding: 15px 20px;
 
   @media (min-width: @tablet-width) {
-    border: solid 1px @grey-color;
-    width: 632px;
-    padding: 0 37px;
-    margin-top: 0;
+    width: auto;
+    padding: 0;
+    margin-top: 3px;
     margin-bottom: 66px;
+    border: solid 1px @grey-color;
+    border-top: none;
+    border-bottom: none;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     width: 895px;
+    margin-bottom: 56px;
     border-right: none;
     border-left: none;
   }
@@ -70,15 +73,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   border-top: solid 1px @grey-color;
-  align-items: baseline;
 
   @media (min-width: @tablet-width) {
+    padding-left: 38px;
+    padding-right: 38px;
     padding-bottom: 9px;
   }
 
   @media (min-width: @desktop-width) {
     flex-wrap: nowrap;
-    padding-bottom: 7px;
+    padding: 0;
+    padding-bottom: 15px;
   }
 }
 
@@ -92,12 +97,18 @@
   line-height: 16px;
   text-transform: uppercase;
   width: 280px;
-  margin-bottom: 0;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 27px;
+    margin-top: 28px;
+    width: 402px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 325px;
   }
 }
 
@@ -114,6 +125,35 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin-top: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 29px;
+  }
+}
+
+.goods__stat {
+  @media (min-width: @tablet-width) {
+    width: 133px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 243px;
+    text-align: inherit;
+  }
+}
+
+.goods__price {
+  @media (min-width: @tablet-width) {
+    width: 88px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 87px;
+    text-align: inherit;
   }
 }
 
@@ -127,13 +167,14 @@
 
   @media (min-width: @tablet-width) {
     width: 632px;
-    margin-top: 23px;
+    margin-top: 20px;
     font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
     width: 244px;
     margin-bottom: 0;
+    margin-top: 17px;
   }
 }
 

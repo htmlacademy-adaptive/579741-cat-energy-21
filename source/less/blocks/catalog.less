@@ -44,7 +44,7 @@
   display: flex;
   border-top: solid 1px @grey-color;
   padding: 7px 20px;
-  justify-content: end;
+  justify-content: flex-end;
   flex-wrap: wrap;
   padding-top: 6px;
   margin-bottom: 17px;
@@ -195,9 +195,18 @@
 
 .catalog__item--all {
   border-bottom: solid 1px @grey-color;
+  padding-bottom: 24px;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     min-height: 429px;
+    border-bottom: solid 1px #f2f2f2;
+    padding-bottom: 0;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 
