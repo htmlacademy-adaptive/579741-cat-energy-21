@@ -22,7 +22,7 @@ const stylesDev = () => {
     .pipe(sourcemap.init())
     .pipe(less())
     .pipe(postcss([autoprefixer()]))
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
@@ -35,7 +35,7 @@ const stylesBuild = () => {
     .pipe(sourcemap.init())
     .pipe(less())
     .pipe(postcss([autoprefixer(), csso()]))
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -57,7 +57,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source",
+      baseDir: "build",
     },
     cors: true,
     notify: false,
@@ -71,7 +71,7 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("stylesDev"));
+  gulp.watch("source/less/**/*.less", gulp.series("stylesBuild"));
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
@@ -171,4 +171,4 @@ exports.build = build;
 
 // Start
 
-exports.default = gulp.series(stylesDev, server, watcher);
+exports.default = gulp.series(build, server, watcher);
