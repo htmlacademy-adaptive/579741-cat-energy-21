@@ -87,7 +87,9 @@
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header__logo" src="img/logo-mobile.svg" alt="Cat Energy">
         </picture>
-        <img class="header__name"src="img/logo 2.svg" alt="Cat Energy">
+        <svg  class="header__name">
+          <use xlink:href="#header__name"></use>
+        </svg>
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
