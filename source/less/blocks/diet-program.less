@@ -19,17 +19,19 @@
   color: #000000;
   margin-top: 28px;
   margin-left: 90px;
+  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 11px;
     margin-left: 54px;
     margin-top: 93px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 216px;
-    padding-bottom: 49px;
+    padding-bottom: 47px;
   }
 }
 
@@ -115,12 +117,14 @@
 .diet-program__description {
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
-  padding: 5px 20px;
-  padding-bottom: 29px;
+  color: #444;
+  border-bottom: 1px solid #cdcdcd;
+  width: 238px;
+  margin-left: 20px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -129,6 +133,7 @@
     padding-bottom: 35px;
     width: 372px;
     margin-left: 53px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -149,16 +154,36 @@
 
 .diet-program__link {
   .font-style();
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 27px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
   margin-left: 19px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-left: 53px;
+  }
+}
+
+.diet-program__link::after {
+  content: "";
+  background-image: url("../img/icon_arrow.svg");
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 32px;
+  top: 7px;
+  left: 101px;
+
+  @media (min-width: @tablet-width) {
+    left: 133px;
   }
 }
