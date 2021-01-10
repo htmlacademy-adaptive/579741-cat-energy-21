@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
   }
 }
 
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 41px;
+    padding-top: 47px;
     width: 896px;
   }
 }
@@ -27,6 +27,7 @@
   color: #000000;
   text-align: left;
   margin-left: 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -38,22 +39,83 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    margin-top: 67px;
+    margin-top: 58px;
     margin-left: 0;
   }
 }
 
+.goods__title::before {
+  content: "";
+  background-image: url(../img/title_line.svg);
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 3px;
+  width: 54px;
+  top: 13px;
+  right: 0px;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    background-image: url(../img/titleline_tablet.svg);
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 2px;
+    width: 328px;
+    top: 20px;
+    right: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    background-image: url(../img/titleline_desktop.svg);
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 2px;
+    width: 957px;
+    top: 23px;
+    right: -111px;
+  }
+}
+
+.goods__title::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    background-image: url(../img/titleline_beforetablet.svg);
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 3px;
+    width: 30px;
+    top: 21px;
+    left: -68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    background-image: url(../img/titleline_beforedesktop.svg);
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 2px;
+    width: 70px;
+    top: 23px;
+    left: -110px;
+  }
+}
+
 .goods__list {
-  margin: auto;
-  margin-top: 19px;
+  margin: 19px auto auto;
   width: 280px;
-  padding: 15px 20px;
+  padding: 16px 20px;
 
   @media (min-width: @tablet-width) {
     width: auto;
     padding: 0;
     margin-top: 3px;
-    margin-bottom: 66px;
+    margin-bottom: 68px;
     border: solid 1px @grey-color;
     border-top: none;
     border-bottom: none;
@@ -109,6 +171,7 @@
 
   @media (min-width: @desktop-width) {
     width: 325px;
+    margin-top: 24px;
   }
 }
 
@@ -125,11 +188,12 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    margin-top: 33px;
+    margin-top: 31px;
+    margin-bottom: 1px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 29px;
+    margin-top: 28px;
   }
 }
 
@@ -152,7 +216,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 87px;
+    width: 82px;
     text-align: inherit;
   }
 }
@@ -169,18 +233,19 @@
     width: 632px;
     margin-top: 20px;
     font-size: 16px;
+    margin-bottom: 17px;
   }
 
   @media (min-width: @desktop-width) {
     width: 244px;
     margin-bottom: 0;
-    margin-top: 17px;
+    margin-top: 16px;
   }
 }
 
 .goods-all__button {
   display: block;
-  padding-top: 186px;
+  padding-top: 188px;
   padding-bottom: 42px;
   width: 280px;
   margin: auto;
@@ -257,10 +322,10 @@
 
   @media (min-width: @desktop-width) {
     width: 245px;
-    margin-top: 47px;
+    margin-top: 50px;
     margin-left: 78px;
     margin-bottom: 0;
-    background: url("../img/gift-photo-desktop.jpg");
+    background: url(../img/gift-photo-desktop.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 
