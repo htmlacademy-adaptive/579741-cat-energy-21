@@ -213,20 +213,22 @@
 
   @media (min-width: @tablet-width) {
     min-height: 429px;
-    border-bottom: solid 1px #f2f2f2;
     padding-bottom: 0;
     margin-bottom: 48px;
+    border: none;
+    background: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
     height: 506px;
+    background: #ffffff;
   }
 }
 
 .catalog__item--all::before {
   content: "";
-  background-image: url(../img/plus.svg);
+  background-image: url("../img/plus.svg");
   display: block;
   position: absolute;
   background-repeat: no-repeat;
@@ -236,7 +238,7 @@
   right: 145px;
 
   @media (min-width: @tablet-width) {
-    background-image: url(../img/plustablet.svg);
+    background-image: url("../img/plustablet.svg");
     display: block;
     position: absolute;
     background-repeat: no-repeat;
@@ -249,6 +251,26 @@
   @media (min-width: @desktop-width) {
     top: 127px;
     right: 91px;
+  }
+}
+
+.catalog__item--all::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 426px;
+    width: 320px;
+    border: 2px solid @grey-color;
+    top: 97px;
+    right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 241px;
+    top: 77px;
+    right: 0;
   }
 }
 
@@ -301,6 +323,16 @@
   @media (min-width: @desktop-width) {
     margin-top: 20px;
   }
+}
+
+.catalog__item--all a:hover {
+  background-color: #ebebeb;
+  color: #444444;
+}
+
+.catalog__item--all a:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .catalog__row td {

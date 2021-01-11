@@ -164,6 +164,11 @@
   user-select: none;
   position: relative;
   cursor: pointer;
+  color: #222222;
+}
+
+.additionally__checkbox + label:disabled {
+  color: rgba(34, 34, 34, 0.3);
 }
 
 .additionally__checkbox + label::before {
@@ -171,7 +176,7 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: 1px solid #adb5bd;
+  border: 1px solid #cdcdcd;
   margin-right: 14px;
 
   @media (min-width: @tablet-width) {
@@ -179,6 +184,14 @@
     height: 40px;
     margin-right: 18px;
   }
+}
+
+.additionally__checkbox + label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.additionally__checkbox + label:disabled::before {
+  border: 1px solid rgba(186, 186, 186, 0.3);
 }
 
 .additionally__checkbox:checked + label::after {
@@ -197,4 +210,8 @@
     top: 16px;
     left: 14px;
   }
+}
+
+.padditionally__checkbox:checked + label:disabled::after {
+  border: 8px solid rgba(104, 183, 56, 0.3);
 }

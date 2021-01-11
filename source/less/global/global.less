@@ -6,13 +6,23 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   background-color: @green-color;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.button:hover {
+  color: white;
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
 }
 
 .slider__toggle {
@@ -30,6 +40,18 @@
     line-height: 30px;
     background-color: #f2f2f2;
     border-bottom: 1px dotted #cdcdcd;
+  }
+}
+
+.slider__toggle:hover {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid #000000;
+  }
+}
+
+.slider__toggle:active {
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
   }
 }
 
@@ -73,4 +95,8 @@ input[type="range"]::-webkit-slider-thumb {
     margin-top: 0;
     box-shadow: 0 0 0 13px white, 0 0 0 14px #dcdcdc;
   }
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  box-shadow: 0 0 0 13px white, 0 0 0 14px @green-color;
 }

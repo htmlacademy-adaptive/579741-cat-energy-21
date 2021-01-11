@@ -100,6 +100,7 @@
 
 .input__form {
   min-height: 38px;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: @tablet-width) {
     min-height: 40px;
@@ -108,6 +109,18 @@
   @media (min-width: @desktop-width) {
     min-height: 46px;
   }
+}
+
+.input__form:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.input__form:focus {
+  border: 2px solid #444444;
+}
+
+.input__form:invalid {
+  border: 2px solid #ff8282;
 }
 
 .input__form--name {
@@ -194,6 +207,11 @@
   user-select: none;
   position: relative;
   cursor: pointer;
+  color: #222222;
+}
+
+.profile__radio + label:disabled {
+  color: rgba(34, 34, 34, 0.3);
 }
 
 .profile__radio + label::before {
@@ -201,7 +219,7 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: 1px solid #adb5bd;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
   margin-right: 14px;
 
@@ -212,12 +230,20 @@
   }
 }
 
+.profile__radio + label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.profile__radio + label:disabled::before {
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
 .profile__radio:checked + label::after {
   display: block;
   position: absolute;
   top: 8px;
   left: 8px;
-  border: 8px solid #68b738;
+  border: 8px solid @green-color;
   border-radius: 50%;
   content: "";
 
@@ -225,4 +251,8 @@
     top: 11px;
     left: 12px;
   }
+}
+
+.profile__radio:checked + label:disabled::after {
+  border: 8px solid rgba(104, 183, 56, 0.3);
 }

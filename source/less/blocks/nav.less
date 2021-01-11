@@ -50,6 +50,33 @@
   }
 }
 
+.nav__link:hover {
+  opacity: 0.6;
+}
+
+.nav__link:active {
+  opacity: 0.3;
+}
+
+.nav__link--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @green-color;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 9px;
+  }
+}
+
+.nav__link--active-form {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @green-color;
+    padding-bottom: 9px;
+  }
+}
+
 .nav__link--form {
   @media (min-width: @desktop-width) {
     color: black;
