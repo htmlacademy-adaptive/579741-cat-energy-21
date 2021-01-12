@@ -158,6 +158,12 @@
   display: none;
 }
 
+.additionally__label {
+  @media (min-width: @desktop-width) {
+    margin-left: 37px;
+  }
+}
+
 .additionally__checkbox + label {
   display: inline-flex;
   align-items: center;
@@ -212,6 +218,6 @@
   }
 }
 
-.padditionally__checkbox:checked + label:disabled::after {
+.additionally__checkbox:checked + label:disabled::after {
   border: 8px solid rgba(104, 183, 56, 0.3);
 }
