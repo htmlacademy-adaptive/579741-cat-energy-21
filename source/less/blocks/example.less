@@ -197,7 +197,7 @@
   }
 }
 
-.example__item--cost {
+.example__cost {
   .font-style();
   font-size: 14px;
   line-height: 20px;
@@ -250,6 +250,36 @@
     margin-left: 89px;
     padding-bottom: 71px;
     width: 584px;
+  }
+}
+
+.example__toggle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #f2f2f2;
+    border-bottom: 1px dotted #cdcdcd;
+  }
+}
+
+.example__toggle:hover {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid #000000;
+  }
+}
+
+.example__toggle:active {
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
   }
 }
 

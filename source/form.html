@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   </head>
   <body class="body">
     <svg style="display: none">
@@ -117,7 +121,7 @@
       <h1 class="page-form__title">Подбор программы</h1>
       <section class="profile">
         <div class="profile__wrapper">
-          <h3 class="visually-hidden">Анкета для подбора программы</h3>
+          <h class="visually-hidden">Анкета для подбора программы</h2>
           <p class="profile__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
           <fieldset class="profile__info">
             <ul class="profile__list input__list">
@@ -135,7 +139,7 @@
               </li>
             </ul>
           </fieldset>
-          <h3 class="visually-hidden">Цель программы</h3>
+          <h2 class="visually-hidden">Цель программы</h2>
           <fieldset class="profile__info target__info">
             <ul class="profile__list target__list">
               <li class="profile__item target__item">
@@ -156,46 +160,46 @@
       </section>
       <section class="owner">
         <div class="owner__wrapper">
-          <h3 class="visually-hidden">Контактные данные (владельца кота)</h3>
+          <h2 class="visually-hidden">Контактные данные (владельца кота)</h2>
           <fieldset class="owner__info owner__info-contacts">
-          <legend class="owner-legend">Контактные данные (владельца кота)</legend>
+          <legend class="owner__legend">Контактные данные (владельца кота)</legend>
             <ul class="owner__list input__list">
               <li class="owner__item input__item">
-                <label class="input__label input__label-mail">E-mail:*</label>
-                <input class="input__form input__form-mail" type="text" placeholder="kuklachev@gmail.com">
+                <label class="input__label input__label--mail">E-mail:*</label>
+                <input class="input__form input__form--mail" type="text" placeholder="kuklachev@gmail.com">
               </li>
               <li class="owner__item input__item">
-                <label class="input__label input__label-tel">Телефон:*</label>
-                <input class="input__form input__form-tel" type="text" placeholder="8 (960) 900-60-90">
+                <label class="input__label input__label--tel">Телефон:*</label>
+                <input class="input__form input__form--tel" type="text" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="owner__info owner__info-comment">
-            <legend class="owner-legend owner-legend-comment">Комментарий</legend>
-            <textarea  class="input__form input__form-comment" name="comment" cols="40" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <fieldset class="owner__info owner__info--comment">
+            <legend class="owner__legend owner__legend--comment">Комментарий</legend>
+            <textarea  class="input__form input__form--comment" name="comment" cols="40" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
         </div>
       </section>
       <section class="additionally">
         <div class="additionally__wrapper">
-          <h3 class="visually-hidden">Дополнительно</h3>
+          <h2 class="visually-hidden">Дополнительно</h2>
             <fieldset class="additionally__info">
               <legend class="additionally__title">Дополнительно</legend>
             <ul class="additionally__list">
               <li class="additionally__item">
-                <input class="input__form additionally__checkbox" type="checkbox" id="4" name="list-goods" checked>
+                <input class="additionally__checkbox input__form" type="checkbox" id="4" name="list-goods" checked>
                 <label for="4">сахарозаменитель</label>
               </li>
               <li class="additionally__item">
-                <input class="input__form additionally__checkbox" type="checkbox" id="5" name="list-goods">
+                <input class="additionally__checkbox input__form" type="checkbox" id="5" name="list-goods">
                 <label for="5">питьевая вода</label>
               </li>
               <li class="additionally__item">
-                <input class="input__form additionally__checkbox" type="checkbox" id="6" name="list-goods">
+                <input class="additionally__checkbox input__form" type="checkbox" id="6" name="list-goods">
                 <label for="6">молоко</label>
               </li>
               <li class="additionally__item">
-                <input class="input__form additionally__checkbox" type="checkbox" id="7" name="list-goods">
+                <input class="additionally__checkbox input__form" type="checkbox" id="7" name="list-goods">
                 <label for="7">витамины</label>
               </li>
             </ul>
