@@ -3,26 +3,24 @@
   margin: auto;
   background-image: linear-gradient(white 30%, @grey-color 70%);
 
-  @media (min-width: @tablet-width) {
-    // max-width: 768px;
-  }
-
   @media (min-width: @desktop-width) {
-    // max-width: 1440px;
     position: relative;
   }
 }
 
 .footer__wrapper {
-  background: linear-gradient(0deg, @grey-color 40%, white 40%);
+  background: @grey-color;
+  margin-top: 29px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 71px;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: space-between;
+    margin-top: 82px;
   }
 }
 

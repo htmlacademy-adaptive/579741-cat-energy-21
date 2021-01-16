@@ -121,36 +121,36 @@
       <h1 class="page-form__title">Подбор программы</h1>
       <section class="profile">
         <div class="profile__wrapper">
-          <h class="visually-hidden">Анкета для подбора программы</h2>
+          <h class="visually-hidden">Анкета для подбора программы</h>
           <p class="profile__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
           <fieldset class="profile__info">
-            <ul class="profile__list input__list">
-              <li class="profile__item input__item">
-                <label class="input__label">ИМЯ:*</label>
-                <input class="input__form input__form--name" type="text" placeholder="БАРСИК">
+            <ul class="profile__list input-list">
+              <li class="profile__item input-list__item">
+                <label class="input-list__label">ИМЯ:*</label>
+                <input class="input-list__form input-list__form--name" type="text" placeholder="БАРСИК">
               </li>
-              <li class="profile__item input__item">
-                <label class="input__label">Вес (кг):*</label>
-                <input class="input__form input__form--weight" type="text" placeholder="7">
+              <li class="profile__item input-list__item">
+                <label class="input-list__label">Вес (кг):*</label>
+                <input class="input-list__form input-list__form--weight" type="text" placeholder="7">
               </li>
-              <li class="profile__item input__item">
-                <label class="input__label">Возраст (лет):</label>
-                <input class="input__form input__form--age" type="text" placeholder="7">
+              <li class="profile__item input-list__item">
+                <label class="input-list__label">Возраст (лет):</label>
+                <input class="input-list__form input-list__form--age" type="text" placeholder="7">
               </li>
             </ul>
           </fieldset>
           <h2 class="visually-hidden">Цель программы</h2>
-          <fieldset class="profile__info target__info">
-            <ul class="profile__list target__list">
-              <li class="profile__item target__item">
+          <fieldset class="profile__info target-info">
+            <ul class="profile__list target-list">
+              <li class="profile__item target-list__item">
                 <input class="profile__radio" type="radio" value="похудение" id="1" name="target" checked>
                 <label for="1">похудение</label>
               </li>
-              <li class="profile__item target__item">
+              <li class="profile__item target-list__item">
                 <input class="profile__radio" type="radio" value="Набор массы" id="2" name="target" >
                 <label for="2">Набор массы</label>
               </li>
-              <li class="profile__item target__item">
+              <li class="profile__item target-list__item">
                 <input class="profile__radio" type="radio" value="Не знаю (Нужен ваш совет)" id="3" name="target" >
                 <label for="3">Не знаю (Нужен ваш совет)</label>
               </li>
@@ -163,20 +163,20 @@
           <h2 class="visually-hidden">Контактные данные (владельца кота)</h2>
           <fieldset class="owner__info owner__info-contacts">
           <legend class="owner__legend">Контактные данные (владельца кота)</legend>
-            <ul class="owner__list input__list">
-              <li class="owner__item input__item">
-                <label class="input__label input__label--mail">E-mail:*</label>
-                <input class="input__form input__form--mail" type="text" placeholder="kuklachev@gmail.com">
+            <ul class="owner__list input-list">
+              <li class="owner__item input-list__item">
+                <label class="input-list__label input-list__label--mail">E-mail:*</label>
+                <input class="input-list__form input-list__form--mail" type="text" placeholder="kuklachev@gmail.com">
               </li>
-              <li class="owner__item input__item">
-                <label class="input__label input__label--tel">Телефон:*</label>
-                <input class="input__form input__form--tel" type="text" placeholder="8 (960) 900-60-90">
+              <li class="owner__item input-list__item">
+                <label class="input-list__label input-list__label--tel">Телефон:*</label>
+                <input class="input-list__form input-list__form--tel" type="text" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="owner__info owner__info--comment">
+          <fieldset class="owner__info owner__info--comment input-list">
             <legend class="owner__legend owner__legend--comment">Комментарий</legend>
-            <textarea  class="input__form input__form--comment" name="comment" cols="40" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea  class="input-list__form input-list__form--comment" name="comment" cols="40" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
         </div>
       </section>
@@ -185,21 +185,21 @@
           <h2 class="visually-hidden">Дополнительно</h2>
             <fieldset class="additionally__info">
               <legend class="additionally__title">Дополнительно</legend>
-            <ul class="additionally__list">
+            <ul class="additionally__list input-list">
               <li class="additionally__item">
-                <input class="additionally__checkbox input__form" type="checkbox" id="4" name="list-goods" checked>
+                <input class="additionally__checkbox input-list__form" type="checkbox" id="4" name="list-goods" checked>
                 <label for="4">сахарозаменитель</label>
               </li>
-              <li class="additionally__item">
-                <input class="additionally__checkbox input__form" type="checkbox" id="5" name="list-goods">
+              <li class="additionally__item input-list__item">
+                <input class="additionally__checkbox input-list__form" type="checkbox" id="5" name="list-goods">
                 <label for="5">питьевая вода</label>
               </li>
-              <li class="additionally__item">
-                <input class="additionally__checkbox input__form" type="checkbox" id="6" name="list-goods">
+              <li class="additionally__item input-list__item">
+                <input class="additionally__checkbox input-list__form" type="checkbox" id="6" name="list-goods">
                 <label for="6">молоко</label>
               </li>
-              <li class="additionally__item">
-                <input class="additionally__checkbox input__form" type="checkbox" id="7" name="list-goods">
+              <li class="additionally__item input-list__item">
+                <input class="additionally__checkbox input-list__form" type="checkbox" id="7" name="list-goods">
                 <label for="7">витамины</label>
               </li>
             </ul>
