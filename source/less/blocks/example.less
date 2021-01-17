@@ -9,6 +9,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    justify-content: center;
     background: linear-gradient(white 26%, @grey-color 26%);
   }
 }
@@ -25,7 +26,6 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     margin-top: 25px;
-    margin-left: 110px;
     width: 556px;
   }
 }
@@ -45,7 +45,7 @@
     flex-wrap: wrap;
     width: 376px;
     justify-content: space-between;
-    padding-left: 3px;
+    padding-left: 0;
   }
 }
 
@@ -67,6 +67,7 @@
     width: 672px;
     min-height: 0;
     background: linear-gradient(white 26%, #f2f2f2 26%);
+    margin: 0;
   }
 }
 
@@ -91,7 +92,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  width: 275px;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -104,9 +105,9 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 126px;
-    padding-left: 4px;
+    padding-left: 0;
     width: 436px;
-    padding-bottom: 46px;
+    padding-bottom: 45px;
   }
 }
 
@@ -144,9 +145,11 @@
     width: 160px;
   }
 
-  @media (min-width: @tablet-width) {
-    line-height: 43px;
-    padding: 14px 0;
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    width: 160px;
+    line-height: 38px;
+    padding: 18px 0;
   }
 }
 
@@ -218,9 +221,12 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
     text-align: left;
     padding-left: 0;
-    padding-top: 39px;
+    width: 326px;
+    padding-top: 36px;
   }
 }
 

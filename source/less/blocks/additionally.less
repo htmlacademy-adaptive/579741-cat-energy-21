@@ -23,6 +23,16 @@
   }
 }
 
+.additionally__wrapper {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 81px;
+  }
+}
+
 .additionally__item {
   .font-style();
   font-size: 16px;
@@ -53,6 +63,7 @@
   width: 320px;
   margin: auto;
   margin-top: 26px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -130,9 +141,9 @@
 .additionally__button {
   font-size: 16px;
   margin: auto;
-  margin-right: 38px;
   width: 280px;
   padding: 10px 0;
+  border: none;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

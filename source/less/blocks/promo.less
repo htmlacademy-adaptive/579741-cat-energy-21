@@ -22,7 +22,7 @@
     background-image: url("../img/index-can.png");
     background-size: 548px auto;
     background-repeat: no-repeat;
-    background-position: top 26px right 330px;
+    background-position: top 26px right 334px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-can@2x.png");
@@ -61,7 +61,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      min-height: 573px;
+      min-height: 577px;
       margin-bottom: 84px;
       background: transparent;
       width: 1220px;
@@ -93,9 +93,9 @@
   @media (min-width: @desktop-width) {
     line-height: 60px;
     width: 426px;
-    padding-left: 85px;
+    padding-left: 79px;
     padding-right: 0;
-    margin-top: 106px;
+    margin-top: 107px;
   }
 }
 
@@ -119,7 +119,7 @@
   @media (min-width: @desktop-width) {
     width: 426px;
     margin-top: 21px;
-    padding-left: 11px;
+    padding-left: 7px;
     padding-right: 0;
     margin-bottom: 54px;
   }
@@ -134,15 +134,19 @@
     margin-left: 82px;
     margin-right: auto;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 16px 26px;
+    margin-left: 79px;
+  }
 }
 
 .promo-desktop {
   @media (min-width: @desktop-width) {
     background: linear-gradient(90deg, white 50%, rgba(104, 183, 56, 0.85) 40%),
-      url("../img/index-background-desktop.jpg");
+      url("../img/index-background-desktop.jpg"),
+      linear-gradient(90deg, white 50%, #504f54 40%);
     background-repeat: no-repeat;
     background-position: top 0 right 0;
-    width: 1440px;
-    margin: auto;
   }
 }
