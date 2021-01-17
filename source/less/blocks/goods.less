@@ -5,13 +5,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: auto;
+    margin-top: 27px;
     margin-bottom: 29px;
   }
 }
 
 .goods__wrapper {
   @media (min-width: @tablet-width) {
-    padding-top: 45px;
+    padding-top: 75px;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,89 +22,42 @@
   }
 }
 
-.goods__title {
+.goods__info {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-top: solid @green-color 2px;
+  margin-top: 19px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 62px;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.goods__legend {
   .font-style();
   font-size: 24px;
   line-height: 24px;
   color: #000000;
   text-align: left;
-  margin-left: 20px;
   position: relative;
+  width: 243px;
+  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 372px;
     font-size: 36px;
     line-height: 36px;
-    margin-left: 38px;
+    margin-left: 30px;
     margin-top: 15px;
+    padding-left: 37px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
     margin-top: 58px;
-    margin-left: 0;
-  }
-}
-
-.goods__title::before {
-  content: "";
-  background-image: url("../img/title_line.svg");
-  display: block;
-  position: absolute;
-  background-repeat: no-repeat;
-  height: 3px;
-  width: 54px;
-  top: 13px;
-  right: 0;
-
-  @media (min-width: @tablet-width) {
-    content: "";
-    background-image: url("../img/titleline_tablet.svg");
-    display: block;
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 2px;
-    width: 328px;
-    top: 20px;
-    right: 8px;
-  }
-
-  @media (min-width: @desktop-width) {
-    content: "";
-    background-image: url("../img/titleline_desktop.svg");
-    display: block;
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 2px;
-    width: 957px;
-    top: 23px;
-    right: -111px;
-  }
-}
-
-.goods__title::after {
-  @media (min-width: @tablet-width) {
-    content: "";
-    background-image: url("../img/titleline_beforetablet.svg");
-    display: block;
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 3px;
-    width: 30px;
-    top: 21px;
-    left: -68px;
-  }
-
-  @media (min-width: @desktop-width) {
-    content: "";
-    background-image: url("../img/titleline_beforedesktop.svg");
-    display: block;
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 2px;
-    width: 70px;
-    top: 23px;
-    left: -110px;
+    margin-left: 74px;
   }
 }
 
@@ -112,7 +67,7 @@
   padding: 16px 20px;
 
   @media (min-width: @tablet-width) {
-    width: auto;
+    width: 708px;
     padding: 0;
     margin-top: 3px;
     margin-bottom: 68px;
@@ -311,7 +266,7 @@
   @media (min-width: @tablet-width) {
     background: url("../img/gift-photo-tablet.jpg");
     background-size: contain;
-    margin-bottom: 74px;
+    margin-bottom: 0;
     width: 708px;
 
     @media (min-resolution: 2dppx) {

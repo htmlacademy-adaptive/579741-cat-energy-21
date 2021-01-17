@@ -2,16 +2,12 @@
   display: flex;
   flex-direction: column;
   background-color: @grey-color;
-  width: 320px;
-  margin: auto;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
-    background-color: #ffffff;
+    background: linear-gradient(#fff 57%, #f2f2f2 57%);
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
     flex-direction: row;
     background: linear-gradient(white 26%, @grey-color 26%);
   }
@@ -56,15 +52,19 @@
 .example__compare {
   background-color: @grey-color;
   padding-top: 42px;
+  width: 320px;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     min-height: 624px;
     background: linear-gradient(white 35%, #f2f2f2 35%);
     padding-top: 90px;
     position: relative;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 672px;
     min-height: 0;
     background: linear-gradient(white 26%, #f2f2f2 26%);
   }
