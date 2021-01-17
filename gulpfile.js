@@ -163,7 +163,8 @@ exports.copy = copy;
 
 const build = gulp.series(
   clean,
-  gulp.parallel(stylesBuild, html, sprite, copy, images, createWebp)
+  images,
+  gulp.parallel(stylesBuild, html, sprite, copy, createWebp)
 );
 
 exports.build = build;
